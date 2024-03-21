@@ -19,7 +19,7 @@ import FullWidthContainerLeft from "./components/FullWidthContainerLeft";
 import RecipientButtonsGrid from "./components/RecipientButtonsGrid";
 import NewsLetterSection from "./components/NewsLetterSection";
 
-export default function Home() {
+const Birthday = () => {
   return (
     <>
       <Head>
@@ -35,4 +35,6 @@ export default function Home() {
       <NewsLetterSection />
     </>
   );
-}
+};
+
+export default Birthday;
