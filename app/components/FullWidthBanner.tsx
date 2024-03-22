@@ -1,5 +1,13 @@
 import Head from "next/head";
-import { Box, Container, Heading, VStack, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  Heading,
+  VStack,
+  Text,
+  Button,
+  Link,
+} from "@chakra-ui/react";
 
 const FullWidthBanner = () => {
   return (
@@ -26,6 +34,9 @@ const FullWidthBanner = () => {
               perfekta presenter. Oavsett om det är till mor, far, student eller
               mor- /farföräldrar så har vi de bästa presenttipsen.
             </Text>
+            <Link href="/present_generator">
+              <Button>Prova Present generatorn</Button>
+            </Link>
           </VStack>
         </Box>
       </Container>

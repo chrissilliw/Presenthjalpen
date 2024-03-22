@@ -9,38 +9,22 @@ import {
 import Link from "next/link";
 import React from "react";
 
-const GiftsOptionsGrid = () => {
+const PresentsRecipient = () => {
   return (
     <>
-      <Container maxWidth="90%" marginY={70}>
-        <Grid templateColumns="repeat(5, 1fr)">
-          <GridItem>
-            <Link href="/presenter/fodelsedag">
-              <VStack>
-                <Image
-                  src="/images/birthday_img.jpg"
-                  alt="birthday image"
-                  boxSize="200px"
-                  objectFit="cover"
-                  borderRadius="full"
-                />
-                <Heading as="h6" size="xs">
-                  Födelsedagspresent
-                </Heading>
-              </VStack>
-            </Link>
-          </GridItem>
+      <Container maxWidth="90%" marginY="100px">
+        <Grid templateColumns="repeat(4, 1fr)">
           <GridItem>
             <VStack>
               <Image
                 src="/images/wedding_img.jpg"
                 alt="Wedding image"
-                boxSize="200px"
+                boxSize="250px"
                 objectFit="cover"
                 borderRadius="full"
               />
-              <Heading as="h6" size="xs">
-                Bröllopspresent
+              <Heading as="h6" size="s" marginTop="10px">
+                Till Henne
               </Heading>
             </VStack>
           </GridItem>
@@ -49,12 +33,12 @@ const GiftsOptionsGrid = () => {
               <Image
                 src="/images/engagement_img.jpg"
                 alt="Engagement image"
-                boxSize="200px"
+                boxSize="250px"
                 objectFit="cover"
                 borderRadius="full"
               />
-              <Heading as="h6" size="xs">
-                Gåva till förlovning
+              <Heading as="h6" size="s" marginTop="10px">
+                Till Honom
               </Heading>
             </VStack>
           </GridItem>
@@ -63,12 +47,12 @@ const GiftsOptionsGrid = () => {
               <Image
                 src="/images/student_img.jpg"
                 alt="Student image"
-                boxSize="200px"
+                boxSize="250px"
                 objectFit="cover"
                 borderRadius="full"
               />
-              <Heading as="h6" size="xs">
-                Studentpresent
+              <Heading as="h6" size="s" marginTop="10px">
+                Till Tonåringen
               </Heading>
             </VStack>
           </GridItem>
@@ -77,12 +61,12 @@ const GiftsOptionsGrid = () => {
               <Image
                 src="/images/mothersday_img.jpg"
                 alt="Mothers day image"
-                boxSize="200px"
+                boxSize="250px"
                 objectFit="cover"
                 borderRadius="full"
               />
-              <Heading as="h6" size="xs">
-                Mors dag / Fars dag present
+              <Heading as="h6" size="s" marginTop="10px">
+                Till Lillen
               </Heading>
             </VStack>
           </GridItem>
@@ -92,4 +76,4 @@ const GiftsOptionsGrid = () => {
   );
 };
 
-export default GiftsOptionsGrid;
+export default PresentsRecipient;
