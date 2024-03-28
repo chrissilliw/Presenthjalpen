@@ -24,7 +24,7 @@ const PresentCard = ({ company }: PresentCardProps) => {
     <>
       <GridItem w="100%" key={company.id}>
         <Link
-          href={`/presenter/${company.company}`}
+          href={`/presenter/${company.id}`}
           _hover={{ textDecoration: "none", cursor: "pointer" }}
           pointerEvents={"all"}
         >

@@ -14,10 +14,12 @@ const Navbar = () => {
     <>
       <Container maxW="100%" marginBottom={6}>
         <Flex alignItems="center">
-          <Box display="flex" alignItems="center">
-            <Image src="/logo.svg" boxSize="50px" alt="logo-image" />
-            <Heading color="#000">Presenthjälpen</Heading>
-          </Box>
+          <Link href="/">
+            <Box display="flex" alignItems="center">
+              <Image src="/logo.svg" boxSize="50px" alt="logo-image" />
+              <Heading color="#000">Presenthjälpen</Heading>
+            </Box>
+          </Link>
           <Spacer />
           <Box display="flex">
             <Flex gap={4} alignItems="center">
