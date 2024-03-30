@@ -7,13 +7,13 @@ import {
   Link,
   Spacer,
 } from "@chakra-ui/react";
-import React from "react";
+import { menuItems } from "../const/menuItem";
 
 const Navbar = () => {
   return (
     <>
-      <Container maxW="100%" marginBottom={6}>
-        <Flex alignItems="center">
+      <Container maxW="100%" marginY={5}>
+        <Flex alignItems="center" paddingX={5}>
           <Link href="/">
             <Box display="flex" alignItems="center">
               <Image src="/logo.svg" boxSize="50px" alt="logo-image" />
@@ -23,15 +23,15 @@ const Navbar = () => {
           <Spacer />
           <Box display="flex">
             <Flex gap={4} alignItems="center">
-              <Link href={"/"} textUnderlineOffset="none">
-                Blog
-              </Link>
-              <Link href={"/"} textUnderlineOffset="none">
-                Blog
-              </Link>{" "}
-              <Link href={"/"} textUnderlineOffset="none">
-                Blog
-              </Link>
+              {menuItems.map((menuItem) => (
+                <Link
+                  key={menuItem.menuName}
+                  href={menuItem.menuLink}
+                  textUnderlineOffset="none"
+                >
+                  {menuItem.menuName}
+                </Link>
+              ))}
             </Flex>
           </Box>
         </Flex>

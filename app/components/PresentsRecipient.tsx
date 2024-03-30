@@ -1,74 +1,137 @@
 import {
+  Box,
   Container,
   Grid,
   GridItem,
-  Heading,
   Image,
+  Text,
+  Link,
+  transition,
+  Button,
   VStack,
+  Heading,
 } from "@chakra-ui/react";
-import Link from "next/link";
 import React from "react";
 
 const PresentsRecipient = () => {
+  const recipientCardImageStyles = {
+    objectFit: "cover",
+    borderRadius: "full",
+  };
+
+  const recipientCardTextStyles = {
+    position: "absolute",
+    top: "52%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    textAlign: "center",
+  };
+
+  const recipientCardBoxStyles = {
+    borderRadius: "full",
+    boxShadow: "0 5px 20px 0 rgba(0,0,0,.15)",
+    transition: "box-shadow, transform 300ms ease-in-out",
+  };
+
   return (
     <>
       <Container maxWidth="90%" marginY="100px">
-        <Grid templateColumns="repeat(4, 1fr)">
+        <Grid templateColumns="repeat(4, 1fr)" gap={12}>
           <GridItem>
-            <VStack>
-              <Image
-                src="/images/wedding_img.jpg"
-                alt="Wedding image"
-                boxSize="250px"
-                objectFit="cover"
-                borderRadius="full"
-              />
-              <Heading as="h6" size="s" marginTop="10px">
-                Till Henne
-              </Heading>
-            </VStack>
+            <Link href="/">
+              <Box
+                position="relative"
+                sx={recipientCardBoxStyles}
+                _hover={{
+                  boxShadow: "0 5px 30px 0 rgba(0,0,0,.15)",
+                  transform: "scale(1.05)",
+                }}
+              >
+                <Image
+                  src="/images/wedding_img.jpg"
+                  alt="Birthday image"
+                  sx={recipientCardImageStyles}
+                />
+                <VStack sx={recipientCardTextStyles}>
+                  <Heading as="h3" size="md">
+                    Till Henne
+                  </Heading>
+                  <Button>Läs mer</Button>
+                </VStack>
+              </Box>
+            </Link>
           </GridItem>
           <GridItem>
-            <VStack>
-              <Image
-                src="/images/engagement_img.jpg"
-                alt="Engagement image"
-                boxSize="250px"
-                objectFit="cover"
-                borderRadius="full"
-              />
-              <Heading as="h6" size="s" marginTop="10px">
-                Till Honom
-              </Heading>
-            </VStack>
+            <Link href="/">
+              <Box
+                position="relative"
+                sx={recipientCardBoxStyles}
+                _hover={{
+                  boxShadow: "0 5px 30px 0 rgba(0,0,0,.15)",
+                  transform: "scale(1.05)",
+                }}
+              >
+                <Image
+                  src="/images/wedding_img.jpg"
+                  alt="Birthday image"
+                  sx={recipientCardImageStyles}
+                />
+                <VStack sx={recipientCardTextStyles}>
+                  <Heading as="h3" size="md">
+                    Till Honom
+                  </Heading>
+                  <Button>Läs mer</Button>
+                </VStack>
+              </Box>
+            </Link>
           </GridItem>
           <GridItem>
-            <VStack>
-              <Image
-                src="/images/student_img.jpg"
-                alt="Student image"
-                boxSize="250px"
-                objectFit="cover"
-                borderRadius="full"
-              />
-              <Heading as="h6" size="s" marginTop="10px">
-                Till Tonåringen
-              </Heading>
-            </VStack>
+            <Link href="/">
+              <Box
+                position="relative"
+                sx={recipientCardBoxStyles}
+                _hover={{
+                  boxShadow: "0 5px 30px 0 rgba(0,0,0,.15)",
+                  transform: "scale(1.05)",
+                }}
+              >
+                <Image
+                  src="/images/wedding_img.jpg"
+                  alt="Birthday image"
+                  sx={recipientCardImageStyles}
+                />
+                <VStack sx={recipientCardTextStyles}>
+                  <Heading as="h3" size="md">
+                    Till Tonåringen
+                  </Heading>
+                  <Button>Läs mer</Button>
+                </VStack>
+              </Box>
+            </Link>
           </GridItem>
           <GridItem>
-            <VStack>
-              <Image
-                src="/images/mothersday_img.jpg"
-                alt="Mothers day image"
-                boxSize="250px"
-                objectFit="cover"
-                borderRadius="full"
-              />
-              <Heading as="h6" size="s" marginTop="10px">
-                Till Lillen
-              </Heading>
-            </VStack>
+            <Link href="/">
+              <Box
+                position="relative"
+                sx={recipientCardBoxStyles}
+                _hover={{
+                  boxShadow: "0 5px 30px 0 rgba(0,0,0,.15)",
+                  transform: "scale(1.05)",
+                }}
+              >
+                <Image
+                  src="/images/wedding_img.jpg"
+                  alt="Birthday image"
+                  sx={recipientCardImageStyles}
+                />
+                <VStack sx={recipientCardTextStyles}>
+                  <Heading as="h3" size="md">
+                    Till Lillen
+                  </Heading>
+                  <Button>Läs mer</Button>
+                </VStack>
+              </Box>
+            </Link>
           </GridItem>
         </Grid>
       </Container>

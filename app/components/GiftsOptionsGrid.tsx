@@ -1,9 +1,11 @@
 import {
+  Button,
   Container,
   Grid,
   GridItem,
   Heading,
   Image,
+  Text,
   VStack,
 } from "@chakra-ui/react";
 import Link from "next/link";
@@ -13,9 +15,17 @@ const GiftsOptionsGrid = () => {
   return (
     <>
       <Container maxWidth="90%" marginY={70}>
-        <Grid templateColumns="repeat(5, 1fr)">
-          <GridItem>
-            <Link href="/presenter/fodelsedag">
+        <Grid templateColumns="repeat(5, 1fr)" gap={4}>
+          <Link href="/presenter/fodelsedag">
+            <GridItem
+              paddingY="50px"
+              boxShadow="0 5px 20px 0 rgba(0,0,0,.15)"
+              transition="box-shadow, transform 300ms ease-in-out"
+              _hover={{
+                boxShadow: "0 5px 30px 0 rgba(0,0,0,.15)",
+                transform: "scale(1.05)",
+              }}
+            >
               <VStack>
                 <Image
                   src="/images/birthday_img.jpg"
@@ -24,68 +34,128 @@ const GiftsOptionsGrid = () => {
                   objectFit="cover"
                   borderRadius="full"
                 />
-                <Heading as="h6" size="xs">
+                <Heading as="h6" size="sm" marginTop={3}>
                   Födelsedagspresent
                 </Heading>
+                <Text fontSize="md" align="center" marginBottom={3}>
+                  Hitta roliga och smarta födelsedagspresenter
+                </Text>
+                <Button>Inspiration</Button>
               </VStack>
-            </Link>
-          </GridItem>
-          <GridItem>
-            <VStack>
-              <Image
-                src="/images/wedding_img.jpg"
-                alt="Wedding image"
-                boxSize="200px"
-                objectFit="cover"
-                borderRadius="full"
-              />
-              <Heading as="h6" size="xs">
-                Bröllopspresent
-              </Heading>
-            </VStack>
-          </GridItem>
-          <GridItem>
-            <VStack>
-              <Image
-                src="/images/engagement_img.jpg"
-                alt="Engagement image"
-                boxSize="200px"
-                objectFit="cover"
-                borderRadius="full"
-              />
-              <Heading as="h6" size="xs">
-                Gåva till förlovning
-              </Heading>
-            </VStack>
-          </GridItem>
-          <GridItem>
-            <VStack>
-              <Image
-                src="/images/student_img.jpg"
-                alt="Student image"
-                boxSize="200px"
-                objectFit="cover"
-                borderRadius="full"
-              />
-              <Heading as="h6" size="xs">
-                Studentpresent
-              </Heading>
-            </VStack>
-          </GridItem>
-          <GridItem>
-            <VStack>
-              <Image
-                src="/images/mothersday_img.jpg"
-                alt="Mothers day image"
-                boxSize="200px"
-                objectFit="cover"
-                borderRadius="full"
-              />
-              <Heading as="h6" size="xs">
-                Mors dag / Fars dag present
-              </Heading>
-            </VStack>
-          </GridItem>
+            </GridItem>
+          </Link>
+          <Link href="/presenter/fodelsedag">
+            <GridItem
+              paddingY="50px"
+              boxShadow="0 5px 20px 0 rgba(0,0,0,.15)"
+              transition="box-shadow, transform 300ms ease-in-out"
+              _hover={{
+                boxShadow: "0 5px 30px 0 rgba(0,0,0,.15)",
+                transform: "scale(1.05)",
+              }}
+            >
+              <VStack>
+                <Image
+                  src="/images/wedding_img.jpg"
+                  alt="Wedding image"
+                  boxSize="200px"
+                  objectFit="cover"
+                  borderRadius="full"
+                />
+                <Heading as="h6" size="sm" marginTop={3}>
+                  Bröllopspresent
+                </Heading>
+                <Text fontSize="md" align="center" marginBottom={3}>
+                  Hitta roliga och smarta födelsedagspresenter
+                </Text>
+                <Button>Inspiration</Button>
+              </VStack>
+            </GridItem>
+          </Link>
+          <Link href="/presenter/fodelsedag">
+            <GridItem
+              paddingY="50px"
+              boxShadow="0 5px 20px 0 rgba(0,0,0,.15)"
+              transition="box-shadow, transform 300ms ease-in-out"
+              _hover={{
+                boxShadow: "0 5px 30px 0 rgba(0,0,0,.15)",
+                transform: "scale(1.05)",
+              }}
+            >
+              <VStack>
+                <Image
+                  src="/images/engagement_img.jpg"
+                  alt="Engagement image"
+                  boxSize="200px"
+                  objectFit="cover"
+                  borderRadius="full"
+                />
+                <Heading as="h6" size="sm" marginTop={3}>
+                  Gåva till förlovning
+                </Heading>
+                <Text fontSize="md" align="center" marginBottom={3}>
+                  Hitta roliga och smarta födelsedagspresenter
+                </Text>
+                <Button>Inspiration</Button>
+              </VStack>
+            </GridItem>
+          </Link>
+          <Link href="/presenter/fodelsedag">
+            <GridItem
+              paddingY="50px"
+              boxShadow="0 5px 20px 0 rgba(0,0,0,.15)"
+              transition="box-shadow, transform 300ms ease-in-out"
+              _hover={{
+                boxShadow: "0 5px 30px 0 rgba(0,0,0,.15)",
+                transform: "scale(1.05)",
+              }}
+            >
+              <VStack>
+                <Image
+                  src="/images/student_img.jpg"
+                  alt="Student image"
+                  boxSize="200px"
+                  objectFit="cover"
+                  borderRadius="full"
+                />
+                <Heading as="h6" size="sm" marginTop={3}>
+                  Studentpresent
+                </Heading>
+                <Text fontSize="md" align="center" marginBottom={3}>
+                  Hitta roliga och smarta födelsedagspresenter
+                </Text>
+                <Button>Inspiration</Button>
+              </VStack>
+            </GridItem>
+          </Link>
+          <Link href="/presenter/fodelsedag">
+            <GridItem
+              paddingY="50px"
+              boxShadow="0 5px 20px 0 rgba(0,0,0,.15)"
+              transition="box-shadow, transform 300ms ease-in-out"
+              _hover={{
+                boxShadow: "0 5px 30px 0 rgba(0,0,0,.15)",
+                transform: "scale(1.05)",
+              }}
+            >
+              <VStack>
+                <Image
+                  src="/images/mothersday_img.jpg"
+                  alt="Mothers day image"
+                  boxSize="200px"
+                  objectFit="cover"
+                  borderRadius="full"
+                />
+                <Heading as="h6" size="sm" marginTop={3}>
+                  Mors dag / Fars dag present
+                </Heading>
+                <Text fontSize="md" align="center" marginBottom={3}>
+                  Hitta roliga och smarta födelsedagspresenter
+                </Text>
+                <Button>Inspiration</Button>
+              </VStack>
+            </GridItem>
+          </Link>
         </Grid>
       </Container>
     </>
