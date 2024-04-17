@@ -10,6 +10,7 @@ export interface ICompany {
     gender: string[];
     occasion: string[];
     category: string;
+    sub_category: string[];
     minAge: number,
     maxAge: number,
     minPrice: number,

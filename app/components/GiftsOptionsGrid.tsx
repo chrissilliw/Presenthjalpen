@@ -14,7 +14,7 @@ import React from "react";
 const GiftsOptionsGrid = () => {
   return (
     <>
-      <Container maxWidth="90%" marginY={70}>
+      <Container width="100%" maxWidth="1440px" marginY={70}>
         <Grid templateColumns="repeat(5, 1fr)" gap={4}>
           <Link href="/presenter/fodelsedag">
             <GridItem

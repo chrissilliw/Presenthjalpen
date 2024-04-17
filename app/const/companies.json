@@ -1,10 +1,10 @@
 [
     {
         "id": "1",
-        "company": "Time for Machine",
-        "info_title": "Pussel som tilltalar både unga och vuxna",
-        "info_text": "Eleganta vintage modellkit från time for machine i rostfritt stål för DIY-konstruktion, inspirerad av de mest fantastiska historiska och kreativa designerna.Fantastiska dekorativa samlarobjekt – perfekt för alla skrivbord, bokhyllor eller andra ytor. Bra i alla interiörer.",
-        "all_text": "Presentförpackning – Levereras med elegant förpackning, vilket gör den perfekta presenten för alla i ditt liv.",
+        "company": "Knatteplock",
+        "info_title": "Knatteplock startades ur en drivkraft att vilja förändra synen på barnmat.",
+        "info_text": "Vår mission är att inspirera kring ett utforskande förhållningssätt till mat så att fler barn kan få en lustfylld och sund relation till mat. Vi tror att matglädje skapas genom att göra matupplevelsen rolig och spännande. För att göra det är en viktig faktor att barn får möjligheten att upptäcka maten själva, i sin takt och på sitt sätt. Därför ska våra produkter göra det lättare för dem att träna på sin förmåga att äta och samtidigt tycka det är lustfyllt. Barnfamiljer/personer som har barn.",
+        "all_text": "",
         "logo": "/company_logos/logotype-time-for-machine.webp",
         "image": "/images/TimeforMachine/image1.webp",
         "website": "https://timeformachine.se/",
@@ -12,11 +12,12 @@
         "occasion": ["födelsedag", "julafton", "student", "pension", "farsdag", "morsdag"],
         "category": "Hobby & fritid",
         "sub_category": ["pussel"],
+        "gift_card_printed": false,
+        "gift_card_digital": true,
         "minAge": 10,
         "maxAge": 100,
-        "minPrice": 29,
-        "maxPrice": 2195, 
-        "related_companyId":"2"
+        "minAmount": 100,
+        "maxAmount": 1000
     },
     {
         "id": "2",

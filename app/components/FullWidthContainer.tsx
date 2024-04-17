@@ -17,14 +17,14 @@ const FullWidthContainer = () => {
           <Image src="/images/soap.jpg" boxSize="60%" objectFit="cover" />
           <Box>
             <Heading as="h3" size="md" mb={3}>
-              Lorem Ipsum
+              Månadens presentkort
             </Heading>
             <Text fontSize="md" mb={5} width="80%">
               Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
               labore et dolore magna aliqua. Ut enim ad minim veniam
             </Text>
             <Link textDecoration="underline" textUnderlineOffset={7}>
-              SE SAMTLIGA SAKER
+              SE NÅGRA FÖRSLAG
             </Link>
           </Box>
         </Flex>
